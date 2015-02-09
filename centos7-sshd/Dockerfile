@@ -2,6 +2,7 @@
 
 FROM centos:7
 MAINTAINER Yang Ming "mingyangcoder@163.com"
+
 RUN yum update -y && yum clean all
 RUN yum install -y openssh-server && yum clean all
 RUN echo "root:bpcoder" | chpasswd
